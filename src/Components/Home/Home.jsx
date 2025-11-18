@@ -15,7 +15,7 @@ export const Home = () => {
   return (
     <>
       <div className="w-full overflow-x-hidden ">
-
+     <RevalonScroll>
       <div className="relative h-[600px] max-h-full ">
        <div className="w-full flex flex-col md:flex-row md:items-start items-end justify-center bg-black py-32 px-4 md:px-8 gap-6 md:gap-12">
       <h1 className="text-4xl md:text-8xl font-bold w-full text-left md:w-[890px] text-white   ">
@@ -45,8 +45,10 @@ export const Home = () => {
           </p>
         <img className="absolute w-20 bottom-[8%] md:bottom-[-30%] md:w-30 right-4 md:right-16 z-20" src="../../../src/assets/Circle Button (Desktop).png"/>
         </div>
-        
+             </RevalonScroll>
 
+        
+         
         <div className="py-20 mt-100 w-full flex flex-col items-start gap-8 px-4 md:px-20 overflow-x-hidden">
           <h1 className="text-8xl font-bold text-left">LET’s Find Your
            DEsign Product</h1>
