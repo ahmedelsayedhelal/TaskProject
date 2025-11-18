@@ -4,8 +4,8 @@ export const OurProjects = () =>
 {
   return (
     <>
-      <div className="flex flex-col md:flex-row w-full h-auto  justify-around py-20 items-end  ">
-        <p className="font-bold text-3xl md:text-6xl  ">
+      <div className="flex flex-col md:flex-row w-full h-auto items-center  justify-around py-20 md:items-end  ">
+        <p className="font-bold text-3xl md:text-6xl   ">
         OUR PASt<br/>
         PROJECTS
 

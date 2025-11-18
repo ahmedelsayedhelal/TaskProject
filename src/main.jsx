@@ -8,6 +8,8 @@ import { Contact } from './Pages/Contact.jsx';
 import { About } from './Pages/About.jsx';
 import { News } from './Pages/News.jsx';
 import { Cases } from './Pages/Cases.jsx';
+import {NewsDetails} from './Pages/NewsDetails.jsx'
+import { WebApp } from './Pages/WebApp.jsx';
 const router = createBrowserRouter([
     {
         path: "/",
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
             {
                 path:"cases",
                 element:<Cases/>
+            },
+            {
+                path:"Details",
+                element:<NewsDetails/>
+            },
+            {
+                path:"webapp",
+                element :<WebApp/>
             }
         ],  
        

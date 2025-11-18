@@ -1,3 +1,5 @@
+
+
 import { useState } from "react";
 export const CasesHome =()=>
 {
@@ -13,7 +15,7 @@ export const CasesHome =()=>
             { id: "updates", label: "UPDATES (3)" },
         ];
     return (
-        <section className="w-full min-h-screen bg-black py-20">
+        <section className="w-full min-h-screen md:mt-26 bg-black py-20">
             <div className="flex flex-col m-auto md:flex-row gap-4 w-full md:justify-around px-12">
 
                 {buttons.map((btn) => (

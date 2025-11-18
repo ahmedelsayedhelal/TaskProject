@@ -1,10 +1,13 @@
+
+import { RevalonScroll } from "../Relevanscroll";
+
 export const AboutHome= ()=>{
     return (
  <section className="mt-84 min-h-screen w-full py-20">
   <div className="grid grid-cols-2 md:grid-cols-3 w-full items-start">
 
-  <div className="flex flex-col h-[440px] py-8 items-center justify-center order-1 md:order-1 border-t border-t-gray-300 border-r border-r-gray-300 ">
-    <p className="text-4xl font-bold">
+  <div className="flex flex-col h-[440px] py-8 items-center justify-center order-1 md:order-1 border-r border-r-gray-300 ">
+    <p className="text-3xl font-bold">
       MEET BATUMBA
     </p>
     <p className="text-xl px-8 mx-12">
@@ -12,7 +15,7 @@ export const AboutHome= ()=>{
     </p>
   </div>
 
-  <div className="flex flex-col  h-[440px] py-8 items-center justify-center order-2 md:order-3 border-t border-t-gray-300 border-l border-l-gray-300">
+  <div className="flex flex-col  h-[440px] py-8 items-center justify-center order-2 md:order-3  border-l border-l-gray-300">
     <p className="text-4xl font-bold">
       HEADING
     </p>

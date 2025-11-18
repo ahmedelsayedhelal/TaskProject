@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 export const NewsHome = () => {
     const [active, setActive] = useState("all");
@@ -13,15 +14,24 @@ export const NewsHome = () => {
         { id: "culture", label: "WORK CULTURE (1)" },
         { id: "updates", label: "UPDATES (3)" },
     ];
+    const navigate =useNavigate();
+    
+  const handleClick = (btn) => {
+    setActive(btn.id); // نحافظ على الـ active
+
+    if (btn.id === "all") {
+      navigate("/Details"); 
+    }
+  };
 
     return (
-        <section className="min-h-screen flex-col items-center justify-around  w-full m-auto mt-20 py-12">
+        <section className="min-h-screen flex-col items-center justify-around  w-full m-auto mt-20 md:mt-48 py-12">
             <div className="flex flex-col m-auto md:flex-row  w-full justify-around flex-wrap">
 
                 {buttons.map((btn) => (
                     <button
                         key={btn.id}
-                        onClick={() => setActive(btn.id)}
+                        onClick={() => handleClick(btn)}
                         className={`px-4 py-2 rounded-full text-sm border
               ${active === btn.id
                                 ? "bg-black text-white"
@@ -75,7 +85,7 @@ export const NewsHome = () => {
                     5 min read
 
                 </p>
-                <p className="text-3xl p-4 ">
+                <p className="hidden md:text-3xl p-4 ">
                     October 3, 2022
 
                 </p>

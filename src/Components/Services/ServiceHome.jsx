@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react"
+import { Link } from "react-router"
 
 export const ServiceHome = () => {
     return (
@@ -14,13 +15,13 @@ export const ServiceHome = () => {
                         order-6 md:order-0">
                     INDUSTRIES
                 </div>
-
+                <Link to="/webapp">
                 <div className="py-12 px-8 flex justify-between items-center border-b border-b-gray-300 border-r border-r-gray-300
                         order-2 md:order-0">
                     <h3 className="font-bold px-4 text-2xl md:text-6xl grow">
                         WEB APPLICATION</h3>
                     <div className="mt-8"><ArrowUpRight /></div>
-                </div>
+                </div> </Link>
 
                 <div className="py-12 px-8 flex justify-between items-center border-b border-b-gray-300  
                         order-7 md:order-0">

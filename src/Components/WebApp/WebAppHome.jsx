@@ -2,20 +2,20 @@ export const WebAppHome = () => {
     const webDesign = [
         {
             id: 1,
-            name: "Reduced <br/> Training Costs",
-            defenation: "Reduced <br/>Training Costs User-oriented design has proved to bring lucrative business benefits. From improving brand awareness to increasing customer acquisition"
+            name: "Reduced  Training Costs",
+            defenation: "Reduced Training Costs User-oriented design has proved to bring lucrative business benefits. From improving brand awareness to increasing customer acquisition"
 
         },
         {
             id: 2,
-            name: "Reduced <br/> Training Costs",
-            defenation: "Reduced <br/>Training Costs User-oriented design has proved to bring lucrative business benefits. From improving brand awareness to increasing customer acquisition"
+            name: "Reduced  Training Costs",
+            defenation: "Reduced Training Costs User-oriented design has proved to bring lucrative business benefits. From improving brand awareness to increasing customer acquisition"
 
         },
         {
             id: 3,
-            name: "Reduced <br/> Training Costs",
-            defenation: "Reduced <br/>Training Costs User-oriented design has proved to bring lucrative business benefits. From improving brand awareness to increasing customer acquisition"
+            name: "Reduced  Training Costs",
+            defenation: "Reduced Training Costs User-oriented design has proved to bring lucrative business benefits. From improving brand awareness to increasing customer acquisition"
 
         },
 
@@ -67,12 +67,12 @@ export const WebAppHome = () => {
 
             </div>
             {webDesign.map(web => (
-                <div className="grid grid-cols-1 md:grid-cols-3 bg-[#1A1A1A] text-white py-20 border-b-2 ">
+                <div className="grid grid-cols-1 md:grid-cols-3 justify-center bg-[#1A1A1A] text-white py-20 border-b-2 pl-20 ">
 
-                    <div className="PX-16">
+                    <div className="PX-16 ">
                         {web.id}
                     </div>
-                    <div>
+                    <div className="text-2xl font-bold">
                         {web.name}
                     </div>
                     <div>
@@ -83,6 +83,10 @@ export const WebAppHome = () => {
 
 
             ))}
+            <h1 className="text-center m-auto md:text-8xl font-bold bg-black py-20 text-white w-full" >
+             BOOST YOUR BUSINESS
+
+            </h1>
         </div>
     )
 }

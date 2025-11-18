@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { OurProjects } from "./OurProjects";
 import {Worthy} from "./Worthy"
+import { RevalonScroll } from "../Relevanscroll";
 
 export const Home = () => {
   const services = [
@@ -15,29 +16,43 @@ export const Home = () => {
     <>
       <div className="w-full overflow-x-hidden ">
 
-      <div className="relative h-full max-h-full ">
-        <div className="w-full flex flex-col items-end md:flex-row items-center md:items-start justify-center bg-black py-20 mb-0 gap-10">
-          <img src="../../../src/assets/UnixStudio DIGITAL AGENCY.png" className="max-w-full" />
-          <img src="../../../src/assets/head.png" className="" />
-        </div>
+      <div className="relative h-[600px] max-h-full ">
+       <div className="w-full flex flex-col md:flex-row md:items-start items-end justify-center bg-black py-32 px-4 md:px-8 gap-6 md:gap-12">
+      <h1 className="text-4xl md:text-8xl font-bold w-full text-left md:w-[890px] text-white   ">
+       UNIXSTUDIO<br />
+       DIGITAL<br />
+       AGENCY
+      </h1>
+
+      <img 
+       src="../../../src/assets/head.png"
+       className="w-[100px] h-[100px] md:w-[140px] md:h-[140px]" 
+       />
+     </div>
+
         
-        <img className="absolute  top-[80%] lg:top-[60%] z-10 " src="../../../src/assets/Graphic.png" />
-        <img className=" absolute  w-full top-[80%] lg:top-[85%] bg-black " src="../../../src/assets/Vector.png" />
-           <p className="absolute lg:top-[150%] left-12 z-20">
+        <img className="hidden md:block absolute h-[400px] w-full bottom-[-35%]  z-10 " src="../../../src/assets/Graphic.png" />
+         <img className="block  transform h-[400px]  md:hidden absolute w-full bottom-[-5%]  z-10 " src="../../../src/assets/Vector 136 (1).png" />
+
+
+        <img className="hidden md:block absolute  w-full bottom-[-20%]  bg-black " src="../../../src/assets/Vector.png" />
+        <img className="block absolute bottom-[2%] md:hidden h-[200px] bg-black w-full " src="../../../src/assets/Vector (2).png" />
+
+           <p className="absolute bottom-[-12%] md:bottom-[-25%] md:px-28  left-4 z-20">
             We won 50+ design awards in 2022 stand alone,
             <br /> some of which had us share the stage with
             <br /> Google, Netflix, and Spotify
           </p>
-        <img className="absolute w-20 lg:top-[140%] md:w-30 right-8 z-20" src="../../../src/assets/Circle Button (Desktop).png"/>
+        <img className="absolute w-20 bottom-[8%] md:bottom-[-30%] md:w-30 right-4 md:right-16 z-20" src="../../../src/assets/Circle Button (Desktop).png"/>
         </div>
+        
 
-        <div className="py-20 mt-100 flex flex-col items-start gap-4 relative px-4 md:px-20 overflow-x-hidden">
-          <img src="../../../src/assets/Heading (1).png" className="w-full max-w-full" />
-          <img
-            src="../../../src/assets/Vector (1).png"
-            className="w-full relative md:absolute md:top-60 md:mb-40 max-w-full"
-          />
-          <p className="font-panchang max-w-lg mt-4">
+        <div className="py-20 mt-100 w-full flex flex-col items-start gap-8 px-4 md:px-20 overflow-x-hidden">
+          <h1 className="text-8xl font-bold text-left">LET’s Find Your
+           DEsign Product</h1>
+           <p className="font-bold text-2xl">Safe and Beneficial Design for Humanity.</p>
+        
+          <p className=" mt-28">
             We build engaging user experience for early-stage startups by connecting
             <br /> the dots between users’ needs and the client’s business model.
           </p>
@@ -62,9 +77,9 @@ export const Home = () => {
         </div>
 
         <div className="py-20 mt-10 px-4 md:px-20">
-          <h1 className="font-bold text-4xl md:text-8xl text-center leading-tight tracking-tight">
-            Behold our greatest <br /> masterpiece ever
-          </h1>
+          <h1 className="font-bold text-4xl md:text-7xl text-center leading-tight tracking-tight">
+          Behold our Greatest
+Masterpiece Ever         </h1>
         </div>
       </div>
 
@@ -86,7 +101,7 @@ export const Home = () => {
             </div>
           </div>
 
-          <h1 className="font-bold text-4xl md:text-8xl text-left text-white px-4 md:px-20 mt-8 mb-2">
+          <h1 className="font-bold text-4xl md:text-7xl text-left text-white px-4 md:px-20 mt-8 mb-2">
             Witness the beauty
           </h1>
 
@@ -113,12 +128,16 @@ export const Home = () => {
             <img src="../../../src/assets/ABOUT CEO.png" className="w-full max-w-4xl py-10 max-w-full" />
           </div>
 
-          {/* Scroll Section */}
          
         </div>
+        <RevalonScroll>
 
         <OurProjects />
-        <Worthy/>
+        </RevalonScroll>
+         <RevalonScroll>
+
+            <Worthy/>
+        </RevalonScroll>
       </div>
     </>
   );

@@ -1,17 +1,26 @@
 import { ArrowRight, ArrowUp, ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 import { Navbar } from "../Home/Nav";
+import { RevalonScroll } from "../Relevanscroll";
 
 export const ContactHead = () => {
     const [view, setview] = useState(false)
     return (
+         <RevalonScroll>
+
         <section id="home" className="min-h-screen flex flex-col bg-black">
 
-            <div className="w-full flex flex-col items-end md:flex-row md:justify-around md:items-start bg-black pt-20 pb-16 gap-10">
-                <img src="../../../src/assets/DROP US A LINE.png" className="max-w-full" />
-                <img src="../../../src/assets/head.png" className="max-w-full" />
-            </div>
 
+            <div className="w-full flex flex-col md:flex-row md:items-start items-end justify-center bg-black py-32 px-4 md:px-8 gap-6 md:gap-12">
+      <h1 className="text-4xl md:text-8xl font-bold w-full text-left md:w-[890px] text-white   ">
+       DROP US <br/> A LINE
+      </h1>
+
+      <img 
+       src="../../../src/assets/head.png"
+       className="w-[100px] h-[100px] md:w-[140px] md:h-[140px]" 
+       />
+     </div>
             <img className="hidden md:block w-full" src="../../../src/assets/Vector.png" />
             <img className="md:hidden w-full" src="../../../src/assets/Vector (2).png" />
 
@@ -156,5 +165,6 @@ export const ContactHead = () => {
             </div>
 
         </section>
+        </RevalonScroll>
     );
 }
