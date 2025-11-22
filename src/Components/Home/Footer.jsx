@@ -6,7 +6,7 @@ const Footer = () => {
     { name: 'Instagram' },
     { name: 'Dribble' },
     { name: 'Behance' },
-    { name: 'Facebook'}
+    { name: 'Facebook' }
   ];
 
   return (
@@ -70,15 +70,15 @@ const Footer = () => {
 
       <div className="flex-1 relative overflow-hidden">
         <img
-          src="../../../src/assets/fooooter.png"
+          src="/public/assets/fooooter.png"
           alt="Team working collaboratively"
           className="w-full h-full object-cover object-center"
         />
       </div>
 
       <div className="absolute left-1/2 md:left-[55%] top-[50%] -translate-x-1/2 -translate-y-1/2 w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-52 lg:h-52 z-20 pointer-events-none">
-        <img 
-          src="../../../src/assets/Icon.png" 
+        <img
+          src="/public/assets/Icon.png"
           alt="Get in Touch"
           className="w-full h-full object-contain"
         />

@@ -46,10 +46,10 @@ export const WebAppHome = () => {
             </div>
             <div
                 className="w-full bg-cover h-auto"
-                style={{ backgroundImage: "url('../../../src/assets/Graphic (1).jpg')" }}
+                style={{ backgroundImage: "url('/public/assets/Graphic (1).jpg')" }}
             >
                 <div className="relative flex flex-col items-center md:items-start z-10 px-4 md:px-20 py-20">
-                    <img src="../../../src/assets/IMG.png" className="w-3/4 md:w-full md:h-[746px] mb-10 max-w-full" />
+                    <img src="/public/assets/IMG.png" className="w-3/4 md:w-full md:h-[746px] mb-10 max-w-full" />
 
                     <div className="flex flex-col w-full items-center py-8">
                         <p className="text-gray-500 text-3xl md:text-4xl mb-2 py-8">

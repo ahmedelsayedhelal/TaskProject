@@ -7,7 +7,7 @@ export const DetailHome = () => {
 
                 <div className="flex items-center gap-6 col-span-2">
                     <img
-                        src="../../../src/assets/News.png"
+                        src="/public/assets/News.png"
                         className="w-20 h-20 rounded-full ml-10"
                     />
                     <p className="text-xl font-semibold">
@@ -69,7 +69,7 @@ export const DetailHome = () => {
                 </div>
 
                 <div className="col-span-2 text-4xl ">
-                    <img src="../../../src/assets/Details.png " />
+                    <img src="/public/assets/Details.png " />
 
                 </div>
 

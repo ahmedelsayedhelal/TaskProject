@@ -2,7 +2,7 @@ import { ArrowUpLeft, ArrowUpRight } from 'lucide-react';
 import React from 'react';
 
 export const Worthy = () => {
-  
+
 
   return (
     <div className="bg-black text-white min-h-screen py-16 px-6 md:px-12 lg:px-20 font-panchang">
@@ -15,9 +15,9 @@ export const Worthy = () => {
               WE ARE{' '}
               <span className="inline-flex items-center">
                 W
-                <img 
-                  className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 mx-2 object-contain' 
-                  src='../../../src/assets/Circle Button (Desktop).png'
+                <img
+                  className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 mx-2 object-contain'
+                  src='/public/assets/Circle Button (Desktop).png'
                   alt="Get in Touch"
                 />
                 RTHY
@@ -33,82 +33,82 @@ export const Worthy = () => {
         </div>
       </div>
 
-       <div className='grid grid-cols-1 md:grid-cols-4 py-20 w-full   '>
+      <div className='grid grid-cols-1 md:grid-cols-4 py-20 w-full   '>
         <div className=' col-start-2  border-l  border-l-gray-300 p-12  '>
-              Active users on marketplaces we’ve created
+          Active users on marketplaces we’ve created
         </div>
         <div className='col-start-3 col-end-4  border-l  border-l-gray-300 p-12'>
-        Our clients raised owning to our design work
+          Our clients raised owning to our design work
 
         </div>
-          <div className=' col-start-2 font-bold text-5xl  border-l  border-l-gray-300 p-12 '>
+        <div className=' col-start-2 font-bold text-5xl  border-l  border-l-gray-300 p-12 '>
           1M
         </div>
         <div className='col-start-3 col-end-4  font-bold text-5xl  border-l  border-l-gray-300 p-12'>
-         $500M <br/>
-         <span className='text-base font-normal'>View your case</span>
+          $500M <br />
+          <span className='text-base font-normal'>View your case</span>
         </div>
         <div className=' col-start-2 font-bold text-5xl  border-l border-t border-t-gray-300 border-l-gray-300 p-12 '>
-           <span className='text-base font-normal'>Design awards</span>
+          <span className='text-base font-normal'>Design awards</span>
 
-          <br/>  80+
+          <br />  80+
         </div>
         <div className='col-start-3   font-bold text-5xl border-t border-t-gray-300  border-l  border-l-gray-300 p-12'>
-            
-            <span className='text-base font-normal'>Lazarev’s years of growth </span>
 
-          <br/>  7
+          <span className='text-base font-normal'>Lazarev’s years of growth </span>
+
+          <br />  7
         </div>
-         <div className='col-start-4  font-bold text-5xl border-t border-t-gray-300  border-l  border-l-gray-300 p-12'>
-        
-         <span className='text-base font-normal py-12'>Successfully finished projects</span>
-          <br/>$500M 
+        <div className='col-start-4  font-bold text-5xl border-t border-t-gray-300  border-l  border-l-gray-300 p-12'>
+
+          <span className='text-base font-normal py-12'>Successfully finished projects</span>
+          <br />$500M
         </div>
         <div className='pt-20 px-8'>
-            Get in touch
+          Get in touch
         </div>
         <div className='pt-20 px-8 border-l  border-l-gray-300 border-t border-t-gray-300'>
-            Wanna fill this cell with your 
-             success story
+          Wanna fill this cell with your
+          success story
         </div>
-         <div className='col-start-3  border-t border-t-gray-300 font-bold text-5xl  border-l  border-l-gray-300 border-b  border-b-gray-300 p-12'>
-            
-            <span className='text-base font-normal'>Design awards</span>
+        <div className='col-start-3  border-t border-t-gray-300 font-bold text-5xl  border-l  border-l-gray-300 border-b  border-b-gray-300 p-12'>
 
-          <br/>  80+
+          <span className='text-base font-normal'>Design awards</span>
+
+          <br />  80+
         </div>
-           <div className='  border-t border-t-gray-300 font-bold text-5xl  border-l  border-l-gray-300 p-12'>
-            
-            <span className='text-base font-normal'>Design awards</span>
+        <div className='  border-t border-t-gray-300 font-bold text-5xl  border-l  border-l-gray-300 p-12'>
 
-          <br/>  25m
+          <span className='text-base font-normal'>Design awards</span>
+
+          <br />  25m
         </div>
         <div className='col-start-1 col-end-3 border-t  border-t-gray-300 '>
-        <div className='flex flex-col md:flex-row w-full md:justify-between md:items-end'>
-        <div className='font-bold text-5xl md:text-7xl p-12'>
-        OUR
-        CLIENTS
+          <div className='flex flex-col md:flex-row w-full md:justify-between md:items-end'>
+            <div className='font-bold text-5xl md:text-7xl p-12'>
+              OUR
+              CLIENTS
 
-        </div>
-        <div className='p-12 '>
-            ALL AROUND
-            THE GLOBE
-        </div>
+            </div>
+            <div className='p-12 '>
+              ALL AROUND
+              THE GLOBE
+            </div>
 
-        </div>
+          </div>
 
         </div>
 
         <div className='col-start-4 flex w-full justify-between items-center border-t  border-t-gray-300'>
-            <div className='border-r border-gray-100 px-20'>
-                <ArrowUpRight/>
-            </div>
-            <div>
-                <ArrowUpLeft/>
-            </div>
+          <div className='border-r border-gray-100 px-20'>
+            <ArrowUpRight />
+          </div>
+          <div>
+            <ArrowUpLeft />
+          </div>
         </div>
 
-       </div>
+      </div>
     </div>
   );
 };

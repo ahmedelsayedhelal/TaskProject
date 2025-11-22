@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { OurProjects } from "./OurProjects";
-import {Worthy} from "./Worthy"
+import { Worthy } from "./Worthy"
 import { RevalonScroll } from "../Relevanscroll";
 
 export const Home = () => {
@@ -15,45 +15,45 @@ export const Home = () => {
   return (
     <>
       <div className="w-full overflow-x-hidden ">
-     <RevalonScroll>
-      <div className="relative h-[600px] max-h-full ">
-       <div className="w-full flex flex-col md:flex-row md:items-start items-end justify-center bg-black py-32 px-4 md:px-8 gap-6 md:gap-12">
-      <h1 className="text-4xl md:text-8xl font-bold w-full text-left md:w-[890px] text-white   ">
-       UNIXSTUDIO<br />
-       DIGITAL<br />
-       AGENCY
-      </h1>
+        <RevalonScroll>
+          <div className="relative h-[600px] max-h-full bg-black ">
+            <div className="w-full flex flex-col md:flex-row md:items-start items-end justify-center bg-black py-32 px-4 md:px-8 gap-6 md:gap-12">
+              <h1 className="text-4xl md:text-8xl font-bold w-full text-left md:w-[890px] text-white   ">
+                UNIXSTUDIO<br />
+                DIGITAL<br />
+                AGENCY
+              </h1>
 
-      <img 
-       src="../../../src/assets/head.png"
-       className="w-[100px] h-[100px] md:w-[140px] md:h-[140px]" 
-       />
-     </div>
-
-        
-        <img className="hidden md:block absolute h-[400px] w-full bottom-[-35%]  z-10 " src="../../../src/assets/Graphic.png" />
-         <img className="block  transform h-[400px]  md:hidden absolute w-full bottom-[-5%]  z-10 " src="../../../src/assets/Vector 136 (1).png" />
+              <img
+                src="/public/assets/head.png"
+                className="w-[100px] h-[100px] md:w-[140px] md:h-[140px]"
+              />
+            </div>
 
 
-        <img className="hidden md:block absolute  w-full bottom-[-20%]  bg-black " src="../../../src/assets/Vector.png" />
-        <img className="block absolute bottom-[2%] md:hidden h-[200px] bg-black w-full " src="../../../src/assets/Vector (2).png" />
+            <img className="hidden md:block absolute h-[400px] w-full bottom-[-35%]  z-10 " src="/public/assets/Graphic.png" />
+            <img className="block   h-[500px]  md:hidden absolute w-full bottom-[-20%]  z-10 " src="/public/assets/Vector 136 (1).png" />
 
-           <p className="absolute bottom-[-12%] md:bottom-[-25%] md:px-28  left-4 z-20">
-            We won 50+ design awards in 2022 stand alone,
-            <br /> some of which had us share the stage with
-            <br /> Google, Netflix, and Spotify
-          </p>
-        <img className="absolute w-20 bottom-[8%] md:bottom-[-30%] md:w-30 right-4 md:right-16 z-20" src="../../../src/assets/Circle Button (Desktop).png"/>
-        </div>
-             </RevalonScroll>
 
-        
-         
+            <img className="hidden md:block absolute  w-full bottom-[-25%]  bg-black " src="/public/assets/Vector.png" />
+            <img className="block absolute bottom-[2%] md:hidden h-[200px] bg-black w-full " src="/public/assets/Vector (2).png" />
+
+            <p className="absolute bottom-[-12%] md:bottom-[-25%] md:px-28  left-4 z-20">
+              We won 50+ design awards in 2022 stand alone,
+              <br /> some of which had us share the stage with
+              <br /> Google, Netflix, and Spotify
+            </p>
+            <img className="absolute w-20 bottom-[8%] md:bottom-[-30%] md:w-30 right-4 md:right-16 z-20" src="/public/assets/Circle Button (Desktop).png" />
+          </div>
+        </RevalonScroll>
+
+
+
         <div className="py-20 mt-100 w-full flex flex-col items-start gap-8 px-4 md:px-20 overflow-x-hidden">
-          <h1 className="text-8xl font-bold text-left">LET’s Find Your
-           DEsign Product</h1>
-           <p className="font-bold text-2xl">Safe and Beneficial Design for Humanity.</p>
-        
+          <h1 className=" text-5xl md:text-8xl font-bold text-left">LET’s Find Your
+            DEsign Product</h1>
+          <p className="font-bold text-2xl">Safe and Beneficial Design for Humanity.</p>
+
           <p className=" mt-28">
             We build engaging user experience for early-stage startups by connecting
             <br /> the dots between users’ needs and the client’s business model.
@@ -80,18 +80,18 @@ export const Home = () => {
 
         <div className="py-20 mt-10 px-4 md:px-20">
           <h1 className="font-bold text-4xl md:text-7xl text-center leading-tight tracking-tight">
-          Behold our Greatest
-Masterpiece Ever         </h1>
+            Behold our Greatest
+            Masterpiece Ever         </h1>
         </div>
       </div>
 
       <div className="relative w-full overflow-x-hidden">
         <div
           className="w-full bg-cover h-auto"
-          style={{ backgroundImage: "url('../../../src/assets/Graphic (1).jpg')" }}
+          style={{ backgroundImage: "url('/public/assets/Graphic (1).jpg')" }}
         >
           <div className="relative flex flex-col items-center md:items-start z-10 px-4 md:px-20 py-20">
-            <img src="../../../src/assets/IMG.png" className="w-3/4 md:w-full md:h-[746px] mb-10 max-w-full" />
+            <img src="/public/assets/IMG.png" className="w-3/4 md:w-full md:h-[746px] mb-10 max-w-full" />
 
             <h1 className="font-bold text-white text-3xl md:text-6xl md:text-left mb-2">
               Unix STUDIO
@@ -115,7 +115,7 @@ Masterpiece Ever         </h1>
             {[0, 1, 2].map((i) => (
               <div key={i} className="flex flex-col gap-4">
                 <img
-                  src={i === 1 ? "../../../src/assets/image 10.png" : "../../../src/assets/product.png"}
+                  src={i === 1 ? "/public/assets/image 10.png" : "/public/assets/product.png"}
                   className="w-full md:w-[560px] h-auto max-w-full"
                 />
                 <div className="flex justify-between text-white">
@@ -127,18 +127,18 @@ Masterpiece Ever         </h1>
           </div>
 
           <div className="flex flex-col items-center mt-10">
-            <img src="../../../src/assets/ABOUT CEO.png" className="w-full max-w-4xl py-10 max-w-full" />
+            <img src="/public/assets/ABOUT CEO.png" className="w-full max-w-4xl py-10 max-w-full" />
           </div>
 
-         
+
         </div>
         <RevalonScroll>
 
-        <OurProjects />
+          <OurProjects />
         </RevalonScroll>
-         <RevalonScroll>
+        <RevalonScroll>
 
-            <Worthy/>
+          <Worthy />
         </RevalonScroll>
       </div>
     </>

@@ -14,15 +14,15 @@ export const NewsHome = () => {
         { id: "culture", label: "WORK CULTURE (1)" },
         { id: "updates", label: "UPDATES (3)" },
     ];
-    const navigate =useNavigate();
-    
-  const handleClick = (btn) => {
-    setActive(btn.id); // نحافظ على الـ active
+    const navigate = useNavigate();
 
-    if (btn.id === "all") {
-      navigate("/Details"); 
-    }
-  };
+    const handleClick = (btn) => {
+        setActive(btn.id); // نحافظ على الـ active
+
+        if (btn.id === "all") {
+            navigate("/Details");
+        }
+    };
 
     return (
         <section className="min-h-screen flex-col items-center justify-around  w-full m-auto mt-20 md:mt-48 py-12">
@@ -48,7 +48,7 @@ export const NewsHome = () => {
 
                 <div className="flex h-20 md:mt-6  justify-start gap-6 order-1 md:order-1">
                     <img
-                        src="../../../src/assets/News.png"
+                        src="/public/assets/News.png"
                         className="w-20 h-20 ml-20 rounded-full"
                     />
                     <p className="text-xl">
@@ -92,14 +92,14 @@ export const NewsHome = () => {
 
             </div>
             <div className="h-[700px] hidden md:block ">
-                <img src="../../../src/assets/hidden.png" className="m-auto" />
+                <img src="/public/assets/hidden.png" className="m-auto" />
 
             </div>
             <div className="flex flex-col md:flex-row w-full justify-around ">
-                <img src="../../../src/assets/11.png" className="mt-8" />
-                <img src="../../../src/assets/12.png" className="mt-8" />
+                <img src="/public/assets/11.png" className="mt-8" />
+                <img src="/public/assets/12.png" className="mt-8" />
 
-                <img src="../../../src/assets/13.png " className="mt-8" />
+                <img src="/public/assets/13.png " className="mt-8" />
             </div>
             <div className="w-3/4  m-auto h-px bg-black  mt-20 "></div>
 
@@ -112,7 +112,7 @@ export const NewsHome = () => {
 
                     <div className="flex items-center gap-6 col-span-2">
                         <img
-                            src="../../../src/assets/News.png"
+                            src="/public/assets/News.png"
                             className="w-20 h-20 rounded-full ml-10"
                         />
                         <p className="text-xl font-semibold">
@@ -137,7 +137,7 @@ export const NewsHome = () => {
 
                     <div className="flex items-center gap-6 col-span-2">
                         <img
-                            src="../../../src/assets/News.png"
+                            src="/public/assets/News.png"
                             className="w-20 h-20 rounded-full ml-10"
                         />
                         <p className="text-xl font-semibold">
@@ -161,7 +161,7 @@ export const NewsHome = () => {
 
                     <div className="flex items-center gap-6 col-span-2">
                         <img
-                            src="../../../src/assets/News.png"
+                            src="/public/assets/News.png"
                             className="w-20 h-20 rounded-full ml-10"
                         />
                         <p className="text-xl font-semibold">
@@ -186,7 +186,7 @@ export const NewsHome = () => {
 
                     <div className="flex items-center gap-6 col-span-2">
                         <img
-                            src="../../../src/assets/News.png"
+                            src="/public/assets/News.png"
                             className="w-20 h-20 rounded-full ml-10"
                         />
                         <p className="text-xl font-semibold">
@@ -217,10 +217,10 @@ export const NewsHome = () => {
 
 
             <div className="flex flex-col md:flex-row w-full justify-around mt-8 py-4 ">
-                <img src="../../../src/assets/14.png" className="mt-8" />
-                <img src="../../../src/assets/15.png" className="mt-8" />
+                <img src="/public/assets/14.png" className="mt-8" />
+                <img src="/public/assets/15.png" className="mt-8" />
 
-                <img src="../../../src/assets/16.png " className="mt-8" />
+                <img src="/public/assets/16.png " className="mt-8" />
             </div>
 
 

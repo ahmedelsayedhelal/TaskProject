@@ -16,12 +16,12 @@ export const ServiceHome = () => {
                     INDUSTRIES
                 </div>
                 <Link to="/webapp">
-                <div className="py-12 px-8 flex justify-between items-center border-b border-b-gray-300 border-r border-r-gray-300
+                    <div className="py-12 px-8 flex justify-between items-center border-b border-b-gray-300 border-r border-r-gray-300
                         order-2 md:order-0">
-                    <h3 className="font-bold px-4 text-2xl md:text-6xl grow">
-                        WEB APPLICATION</h3>
-                    <div className="mt-8"><ArrowUpRight /></div>
-                </div> </Link>
+                        <h3 className="font-bold px-4 text-2xl md:text-6xl grow">
+                            WEB APPLICATION</h3>
+                        <div className="mt-8"><ArrowUpRight /></div>
+                    </div> </Link>
 
                 <div className="py-12 px-8 flex justify-between items-center border-b border-b-gray-300  
                         order-7 md:order-0">
@@ -104,7 +104,7 @@ export const ServiceHome = () => {
                             network of Angel investors and Venture Capital.
                         </p>
 
-                        <img className="w-[120px] p-8" src="../../../src/assets/Button Circle.png" />
+                        <img className="w-[120px] p-8" src="/public/assets/Button Circle.png" />
 
 
                     </div>
