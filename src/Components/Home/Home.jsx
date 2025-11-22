@@ -1,4 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import { OurProjects } from "./OurProjects";
 import { Worthy } from "./Worthy"
 import { RevalonScroll } from "../Relevanscroll";
@@ -11,10 +13,18 @@ export const Home = () => {
     "PROGRAMMATIC \n ADVERTISING",
     "MARKETING AS A SERVICE",
   ];
+  const images = [
+  { src: "/public/assets/product.png", title: "Medit", subtitle: "Website Design" },
+  { src: "/public/assets/image 10.png", title: "Medit", subtitle: "Website Design" },
+  { src: "/public/assets/product.png", title: "Medit", subtitle: "Website Design" },
+  { src: "/public/assets/image 10.png", title: "Medit", subtitle: "Website Design" },
+  { src: "/public/assets/product.png", title: "Medit", subtitle: "Website Design" }
+];
+
 
   return (
     <>
-      <div className="w-full overflow-x-hidden ">
+      <div className="w-full overflow-hidden ">
         <RevalonScroll>
           <div className="relative h-[600px] max-h-full bg-black ">
             <div className="w-full flex flex-col md:flex-row md:items-start items-end justify-center bg-black py-32 px-4 md:px-8 gap-6 md:gap-12">
@@ -85,7 +95,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="relative w-full overflow-x-hidden">
+      <div className="relative w-full overflow-hidden">
         <div
           className="w-full bg-cover h-auto"
           style={{ backgroundImage: "url('/public/assets/Graphic (1).jpg')" }}
@@ -111,20 +121,31 @@ export const Home = () => {
             Safe and Beneficial Design for Humanity.
           </h3>
 
-          <div className="flex flex-col md:flex-row gap-10 mt-10 w-full px-4 md:px-20 justify-center">
-            {[0, 1, 2].map((i) => (
-              <div key={i} className="flex flex-col gap-4">
-                <img
-                  src={i === 1 ? "/public/assets/image 10.png" : "/public/assets/product.png"}
-                  className="w-full md:w-[560px] h-auto max-w-full"
-                />
-                <div className="flex justify-between text-white">
-                  <p>Medit</p>
-                  <p>Website Design</p>
-                </div>
-              </div>
-            ))}
-          </div>
+         <Swiper
+         spaceBetween={0}
+        slidesPerView={1}
+          breakpoints={{
+          768: { slidesPerView: 2 },
+         1024: { slidesPerView: 2.5 },
+          }}
+          className="mt-10 px-4 md:px-20 overflow-hidden "
+           >
+        {images.map((item, i) => (
+          <SwiperSlide key={i}>
+          <div className="flex flex-col gap-4 pl-20">
+        <img
+          src={item.src}
+          className="w-full h-auto max-w-full cursor-grab active:cursor-grabbing "
+        />
+        <div className="flex justify-between text-white">
+          <p>{item.title}</p>
+          <p>{item.subtitle}</p>
+        </div>
+        </div>
+       </SwiperSlide>
+       ))}
+      </Swiper>
+
 
           <div className="flex flex-col items-center mt-10">
             <img src="/public/assets/ABOUT CEO.png" className="w-full max-w-4xl py-10 max-w-full" />
