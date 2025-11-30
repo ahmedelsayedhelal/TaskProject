@@ -58,15 +58,16 @@
 }
 
 html, body, #root {
-  font-family: 'Panchang', sans-serif;
+  font-family: 'Hubot-Sans', sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 @layer utilities {
-  .outline-text {
-    font-family: 'Panchang', sans-serif; 
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-    font-weight: 700;
+  .font-panchang {
+    font-family: 'Panchang', sans-serif;
+  }
+  .hubot-sans {
+    font-family: 'Hubot-Sans', sans-serif;
   }
 }
 

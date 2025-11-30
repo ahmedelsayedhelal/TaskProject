@@ -6,11 +6,11 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10">
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+    <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 ">
+      
+        <div className="flex justify-between   items-center h-16 mx-8 md:mx-20">
         
-          <Link to="/" className="font-mono text-xl font-bold text-white">
+          <Link to="/" className=" text-xl font-bold text-white">
            UNIXSTUDIO
           </Link>
 
@@ -31,7 +31,6 @@ export const Navbar = () => {
 
           </div>
         </div>
-      </div>
 
       <div
         className={`md:hidden fixed top-0 left-0 w-full h-screen bg-[rgba(10,10,10,0.95)] backdrop-blur-lg flex flex-col items-center justify-center gap-8 transition-transform duration-500 ${

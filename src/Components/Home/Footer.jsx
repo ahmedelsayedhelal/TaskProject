@@ -11,9 +11,7 @@ const Footer = () => {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen font-sans relative overflow-hidden">
-      {/* Left Panel */}
       <div className="flex-1 bg-gray-100 px-10 lg:px-20 py-12 lg:py-16 flex flex-col justify-between relative z-10">
-        {/* Social Media Links */}
         <div className="flex flex-col gap-3 mb-16 lg:mb-20">
           <div className="flex gap-3 flex-wrap">
             {socialLinks.slice(0, 3).map((link, index) => (

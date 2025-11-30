@@ -1,9 +1,11 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowDownLeft, ArrowUpLeft, ArrowUpRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { OurProjects } from "./OurProjects";
 import { Worthy } from "./Worthy"
+import {Head} from "./Head"
 import { RevalonScroll } from "../Relevanscroll";
+import { About } from './../../Pages/About';
 
 export const Home = () => {
   const services = [
@@ -14,94 +16,61 @@ export const Home = () => {
     "MARKETING AS A SERVICE",
   ];
   const images = [
-  { src: "/public/assets/product.png", title: "Medit", subtitle: "Website Design" },
-  { src: "/public/assets/image 10.png", title: "Medit", subtitle: "Website Design" },
-  { src: "/public/assets/product.png", title: "Medit", subtitle: "Website Design" },
-  { src: "/public/assets/image 10.png", title: "Medit", subtitle: "Website Design" },
-  { src: "/public/assets/product.png", title: "Medit", subtitle: "Website Design" }
-];
+    { src: "/public/assets/slider1.svg", title: "MEDIT", subtitle: "Website Design" },
+    { src: "/public/assets/slider2.svg", title: "MEDIT", subtitle: "Website Design" },
+    { src: "/public/assets/slider1.svg", title: "MEDIT", subtitle: "Website Design" },
+    { src: "/public/assets/slider2.svg", title: "MEDIT", subtitle: "Website Design" },
+    { src: "/public/assets/slider1.svg", title: "MEDIT", subtitle: "Website Design" }
+  ];
 
 
   return (
     <>
-      <div className="w-full overflow-hidden ">
-        <RevalonScroll>
-          <div className="relative h-[600px] max-h-full bg-black ">
-            <div className="w-full flex flex-col md:flex-row md:items-start items-end justify-center bg-black py-32 px-4 md:px-8 gap-6 md:gap-12">
-              <h1 className="text-4xl md:text-8xl font-bold w-full text-left md:w-[890px] text-white   ">
-                UNIXSTUDIO<br />
-                DIGITAL<br />
-                AGENCY
-              </h1>
+     
+     <Head />
 
-              <img
-                src="/public/assets/head.png"
-                className="w-[100px] h-[100px] md:w-[140px] md:h-[140px]"
-              />
-            </div>
+     
 
+      <div className="flex flex-col w-full  ">
+      <h1 className="font-bold font-panchang text-3xl md:text-7xl uppercase px-20 mb-12">
+        LET’s Find Your <br/>
+        DEsign Product
+      </h1>
+      <p className="text-xl md:text-3xl px-20 font-panchang font-semibold ">
+        Safe and Beneficial Design for Humanity.
+      </p>
+      <img src="/public/assets/Vector (1).png" className=" relative bottom-[90%]" />
+      <div className="flex justify-between">
+      <p className="px-20 text-2xl">
+        We build engaging user experience for early-stage startups
+         by connecting<br/>  the dots between users’ needs and the client’s business model.
+      </p>
+      <p className="px-20 underline text-xl ">
+        See Details
+      </p>
 
-            <img className="hidden md:block absolute h-[400px] w-full bottom-[-35%]  z-10 " src="/public/assets/Graphic.png" />
-            <img className="block   h-[500px]  md:hidden absolute w-full bottom-[-20%]  z-10 " src="/public/assets/Vector 136 (1).png" />
-
-
-            <img className="hidden md:block absolute  w-full bottom-[-25%]  bg-black " src="/public/assets/Vector.png" />
-            <img className="block absolute bottom-[2%] md:hidden h-[200px] bg-black w-full " src="/public/assets/Vector (2).png" />
-
-            <p className="absolute bottom-[-12%] md:bottom-[-25%] md:px-28  left-4 z-20">
-              We won 50+ design awards in 2022 stand alone,
-              <br /> some of which had us share the stage with
-              <br /> Google, Netflix, and Spotify
-            </p>
-            <img className="absolute w-20 bottom-[8%] md:bottom-[-30%] md:w-30 right-4 md:right-16 z-20" src="/public/assets/Circle Button (Desktop).png" />
-          </div>
-        </RevalonScroll>
-
-
-
-        <div className="py-20 mt-100 w-full flex flex-col items-start gap-8 px-4 md:px-20 overflow-x-hidden">
-          <h1 className=" text-5xl md:text-8xl font-bold text-left">LET’s Find Your
-            DEsign Product</h1>
-          <p className="font-bold text-2xl">Safe and Beneficial Design for Humanity.</p>
-
-          <p className=" mt-28">
-            We build engaging user experience for early-stage startups by connecting
-            <br /> the dots between users’ needs and the client’s business model.
-          </p>
-          <a href="#Details" className="underline mt-2">
-            See Details
-          </a>
-        </div>
-
+      </div>
         <div className="w-full py-20 mt-10 px-4 md:px-20">
           <ul className="divide-y divide-gray-200">
             {services.map((title, index) => (
               <li key={index} className="py-8">
                 <button className="w-full flex items-center justify-between group">
-                  <h2 className="font-panchang text-3xl md:text-6xl font-bold tracking-tight leading-tight whitespace-pre-line text-left">
+                  <h2 className="font-panchang text-xl md:text-5xl font-bold cursor-text  whitespace-pre-line text-left">
                     {title}
                   </h2>
-                  <ArrowUpRight className="w-7 h-7 text-gray-400 group-hover:text-black transition" />
+                  <ArrowUpRight size={60} className=" text-gray-400 group-hover:text-black transition" />
                 </button>
               </li>
             ))}
           </ul>
         </div>
 
-        <div className="py-20 mt-10 px-4 md:px-20">
-          <h1 className="font-bold text-4xl md:text-7xl text-center leading-tight tracking-tight">
-            Behold our Greatest
-            Masterpiece Ever         </h1>
-        </div>
-      </div>
-
-      <div className="relative w-full overflow-hidden">
         <div
           className="w-full bg-cover h-auto"
-          style={{ backgroundImage: "url('/public/assets/Graphic (1).jpg')" }}
+          style={{ backgroundImage: "url('/public/assets/background.svg')" }}
         >
           <div className="relative flex flex-col items-center md:items-start z-10 px-4 md:px-20 py-20">
-            <img src="/public/assets/IMG.png" className="w-3/4 md:w-full md:h-[746px] mb-10 max-w-full" />
+            <img src="/public/assets/IMG.svg" className="w-3/4 md:w-full md:h-[746px] mb-10 max-w-full" />
 
             <h1 className="font-bold text-white text-3xl md:text-6xl md:text-left mb-2">
               Unix STUDIO
@@ -109,58 +78,136 @@ export const Home = () => {
 
             <div className="flex flex-col w-full items-center md:flex-row md:justify-between">
               <p className="text-gray-500 text-3xl md:text-4xl text-left mb-2">Website Design</p>
-              <p className="text-white underline text-xl md:text-2xl md:text-right">Catch a glimse!</p>
+              <p className="text-[#FFFFFF] border-b border-b-gray-200 text-xl md:text-2xl md:text-right">Catch a glimse!</p>
             </div>
           </div>
 
-          <h1 className="font-bold text-4xl md:text-7xl text-left text-white px-4 md:px-20 mt-8 mb-2">
-            Witness the beauty
+          <h1 className="font-bold text-center text-2xl md:text-6xl font-panchang md:text-left text-white px-4 md:px-20 mt-4 md:mt-12 mb-8">
+            WITNESS THE BEAUTY
           </h1>
 
-          <h3 className="text-white text-xl md:text-4xl text-left px-4 md:px-20 mb-10">
-            Safe and Beneficial Design for Humanity.
+          <h3 className="text-white text-xl md:text-3xl font-panchang text-center  md:text-left px-4 md:px-20 md:mb-32">
+            SAFE AND BENEFICIAL DESIGIN FOR <br /> HUMANITY.
           </h3>
 
-         <Swiper
-         spaceBetween={0}
-        slidesPerView={1}
-          breakpoints={{
-          768: { slidesPerView: 2 },
-         1024: { slidesPerView: 2.5 },
-          }}
-          className="mt-10 px-4 md:px-20 overflow-hidden "
-           >
-        {images.map((item, i) => (
-          <SwiperSlide key={i}>
-          <div className="flex flex-col gap-4 md:pl-20">
-        <img
-          src={item.src}
-          className="w-full h-auto max-w-full cursor-grab active:cursor-grabbing "
-        />
-        <div className="flex justify-between text-white">
-          <p>{item.title}</p>
-          <p>{item.subtitle}</p>
-        </div>
-        </div>
-       </SwiperSlide>
-       ))}
-      </Swiper>
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            breakpoints={{
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 2.5 },
+            }}
+            className="mt-20 px-4 md:px-20 overflow-hidden "
+          >
+            {images.map((item, i) => (
+              <SwiperSlide key={i}>
+                <div className="flex flex-col gap-4 md:pl-20">
+                  <img
+                    src={item.src}
+                    className="w-full h-auto max-w-full cursor-grab active:cursor-grabbing "
+                  />
+                  <div className="flex justify-between text-white mt-4">
+                    <p className="font-bold text-xl">{item.title}</p>
+                    <p className="text-xl text-[#B8B8B8]">{item.subtitle}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          <h1 className="font-bold text-center text-2xl md:text-6xl font-panchang text-white px-4 md:px-20 mt-4 md:mt-48 mb-8 md:mb-32">
+            ABOUT CEO
+          </h1>
+
+          <div className="flex flex-row  px-4 md:px-20 gap-8 md:gap-12">
+            <div className="hidden shrink-0 w-40 h-40 md:w-40 md:h-40 md:flex items-end justify-center">
+              <img src="../../../public/assets/head.png" />
+            </div>
 
 
-          <div className="flex flex-col items-center mt-10">
-            <img src="/public/assets/ABOUT CEO.png" className="w-full max-w-4xl py-10 max-w-full" />
+            <span className="text-6xl md:text-9xl font-bold text-white align-top  ">“</span>
+
+
+            <div className="flex-1">
+              <div className="relative mb-8">
+                <p className="text-lg md:text-3xl lg:text-5xl pt-8 text-white leading-relaxed ml-8 md:ml-12 -mt-4 md:-mt-8">
+                  This is the highest level of professionalism I have ever encountered in the years that
+                  I have been hiring people in this field. You have the distinct impression that you are
+                  a part of a productive team.
+                </p>
+              </div>
+              <div className="flex w-full items-center justify-between ">
+              <div className="flex items-center gap-4 mt-8 px-8">
+                <img
+                  src="/public/assets/Mask group.svg"
+                  className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover  shrink-0"
+                  alt="Rachel Russiia"
+                />
+                <div>
+                  <h3 className="text-white font-bold text-lg md:text-2xl uppercase ">
+                    RACHEL RUSSIIA
+                  </h3>
+                  <p className="text-gray-300 text-sm md:text-lg">
+                    CEO of Unix Studio
+                  </p>
+                </div>
+                </div>
+                <div className="flex gap-4 mt-8 px-8">
+                 <ArrowDownLeft size={40} className="text-[#B8B8B8] " />
+
+                <ArrowUpRight size={40} className="text-[#B8B8B8]  " />
+                </div>
+                
+              </div>
+
+            </div>
+            
           </div>
 
+          <div className="flex justify-center items-center mt-20 md:mt-88  font-panchang ">
+            <h3 className="hidden md:block font-bold text-4xl md:text-7xl">
+              UNIX STUDIO
+            </h3>
+             <h3 className="block md:hidden font-bold text-4xl md:text-7xl">
+              UNIX 
+            </h3>
+            <img src="/public/assets/Vector.svg" className="inline-block ml-2 w-12 h-12 md:w-25 md:h-25" />
+            <h3 className="hidden md:block font-bold text-4xl md:text-7xl">
+              UNIX STUDIO
+            </h3>
+              <h3 className="block md:hidden font-bold text-4xl md:text-7xl">
+              STUDIO
+            </h3>
+          </div>
+
+              <div className=" flex justify-center items-center mt-4 mb-20 font-panchang ">
+               <h3 className="hidden md:block font-bold text-4xl md:text-7xl">
+              STUDIO
+            </h3>
+             <h3 className="block md:hidden font-bold text-4xl md:text-7xl">
+              UNIX 
+            </h3>
+            <img src="/public/assets/Vector.svg" className="inline-block ml-2 w-12 h-12 md:w-25 md:h-25" />
+              <h3 className="hidden md:block font-bold text-4xl md:text-7xl">
+              UNIX STUDIO UNIX
+            </h3>
+              <h3 className="block md:hidden font-bold text-4xl md:text-7xl">
+              STUDIO
+            </h3>
+          </div>
 
         </div>
-        <RevalonScroll>
+        <p className="m-auto w-max text-2xl text-center text-[#121212] font-normal mb-12 ">
+          Dont’t wait any longer, let’s unleash your imagination and create <br/> something extraordinary together!
+        </p>
+         <p className="m-auto w-max text-2xl text-center text-[#121212] font-normal border-b border-b-[#121212]
+         ">
+         Catch a glimse!
+        </p>
 
-          <OurProjects />
-        </RevalonScroll>
-        <RevalonScroll>
 
-          <Worthy />
-        </RevalonScroll>
+        <OurProjects />
+        <Worthy />
       </div>
     </>
   );

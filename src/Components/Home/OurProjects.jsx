@@ -4,8 +4,8 @@ export const OurProjects = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row w-full h-auto items-center  justify-around py-20 md:items-end  ">
-        <p className="font-bold text-3xl md:text-6xl   ">
-          OUR PASt<br />
+        <p className="font-bold text-3xl md:text-6xl font-panchang  ">
+          OUR PAST<br />
           PROJECTS
 
         </p>
@@ -14,14 +14,14 @@ export const OurProjects = () => {
 
         </p>
       </div>
-      <div className=" mt-12 grid  sm:grid-cols-1 md:grid-cols-3 border border-gray-100    ">
+      <div className=" mt-12 grid  sm:grid-cols-1 md:grid-cols-3 w-full     ">
 
         <div className="md:col-start-2 md:col-end-3 border  border-gray-100  border-t-0 h-[600px]  ">
           <div className="flex flex-col  ">
             <div className="mb-80">
               <div className="flex justify-between items-center md:flex-row md:justify-around py-8 ">
 
-                <h3 className="font-bold text-2xl md:text-3xl  border-b-2 ">Olive Max</h3>
+                <h3 className="font-bold text-2xl md:text-3xl   ">Olive Max</h3>
 
                 <ArrowUpRight />
               </div>
@@ -39,18 +39,14 @@ export const OurProjects = () => {
           </div>
         </div>
 
-        <div className="md:col-start-3 border border-gray-100 border-t-0 ">
-          <div className="">
-            <img src="/public/assets/a1202085fe857f4432475b16ca6fb321c6cbb819.png " className="h-[600px] w-[400px] p-[32px_0px_32px_32px] pr-0" />
-          </div>
+        <div className="md:col-start-3  justify-self-end ">
+            <img src="/public/assets/projectone.svg " className="h-[600px] w-[400px] p-[32px_0px_32px_32px] pr-0" />
         </div>
-        <div className="md:col-start-2 md:col-end-3 border  border-gray-100  border-t-0 ">
-          <div className="">
-            <img src="/public/assets/00ae9c9b6a27a35ac41b5e53ec020741df2fdb29.png" className="h-[600px] w-[400px] p-[32px_0px_32px_32px] pr-0" />
-          </div>
+        <div className="md:col-start-2 md:col-end-3  ">
+            <img src="/public/assets/projecttwo.svg" className="h-[600px] w-[400px] p-[32px_0px_32px_32px] pr-0" />
+        </div>
 
-        </div>
-        <div className="md:col-start-3 border  border-gray-100  border-t-0">
+        <div className="md:col-start-3 ">
           <div className="flex flex-col  ">
             <div className="mb-80">
               <div className="flex justify-between items-center md:flex-row md:justify-around py-8 ">
@@ -73,17 +69,17 @@ export const OurProjects = () => {
           </div>
         </div>
 
-        <div className="md:col-start-2 md:col-end-4  border  border-gray-100 border-b-0  border-t-0 ">
-          <p className="text-xs tracking-widest text-gray-500 pt-20">SERVICES</p>
+        <div className="md:col-start-2 md:col-end-4  border  border-gray-100 border-b-0  border-t-0 mb-20 ">
+          <p className="text-xs tracking-widest text-gray-500 pt-20 pl-8">SERVICES</p>
 
-          <h2 className="text-3xl md:text-4xl px-20 font-semibold leading-relaxed">
+          <h2 className="text-3xl md:text-4xl px-28  ">
             We combine human empathy and <br />
             intelligent data to provide the
           </h2>
           <br />
-          <span className="py-0 text-3xl md:text-4xl  font-semibold leading-relaxed text-left">highest level of satisfaction for our <br />
+          <h2 className=" text-3xl md:text-5xl pl-8   ">highest level of satisfaction for our <br/>
             customers and their users.
-          </span>
+          </h2>
 
 
         </div>
