@@ -7,13 +7,13 @@ export const ContactHome = () => {
     const [view, setview] = useState(false)
     return (
 
-            <section id="home" className="min-h-screen flex flex-col bg-black">
+            <section  className="min-h-screen flex flex-col bg-black">
                
-                <div className="pt-20 w-full flex flex-col md:flex-row justify-around flex-wrap py-12">
+                <div className="md:pt-20 w-full flex flex-col md:flex-row justify-around flex-wrap py-12">
 
-                    <div className="flex flex-col  justify-between px-8 py-12 w-full md:w-[30%] md:h-[520px]">
+                    <div className="flex flex-col   justify-between px-8 py-12 w-full md:w-[30%] md:h-[520px]">
                         <div className=" flex   ">
-                            <img className=" md:block  mb-4" src="/public/assets/Logo.png" />
+                            <img className=" md:block px-4  mb-4" src="/public/assets/Logo.png" />
                             <ArrowRight className="md:hidden py-1 text-white  w-[100px]" onClick={() => { setview(!view) }} />
                         </div>
                         <div className="flex justify-between w-full items-center">

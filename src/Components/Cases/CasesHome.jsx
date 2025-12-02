@@ -16,8 +16,8 @@ export const CasesHome = () => {
     { id: "updates", label: "UPDATES (3)" },
   ];
   return (
-    <section className="w-full min-h-screen md:mt-26 bg-black py-20 px-4 md:px-8">
-      <div className="flex flex-col m-auto md:flex-row gap-4 w-full md:justify-around px-12">
+    <section className="w-full min-h-screen md:mt-26 bg-black py-20 px-4 md:px-6 ">
+      <div className="flex flex-col m-auto md:flex-row gap-4 w-full md:justify-around px-4 md:px-0">
 
         {buttons.map((btn) => (
           <button
@@ -35,8 +35,8 @@ export const CasesHome = () => {
 
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3  w-full mt-12 py-12 px-12 border-b border-b-[#383838]  border-t border-t-[#383838]">
-        <div className="md:border-r border-r-[#383838] px-12 mb-12 order-1 md:order-0">
+      <div className="grid grid-cols-1 md:grid-cols-3  w-full mt-12 py-12  md:px-10 border-b border-b-[#383838]  border-t border-t-[#383838]">
+        <div className="md:border-r border-r-[#383838] px-4 mb-12 order-1 md:order-0">
         <div className="flex flex-col">
           <h1 className="text-white text-2xl pb-8 font-bold font-panchang">
             Featured
@@ -48,7 +48,7 @@ export const CasesHome = () => {
 
         </div>
 
-        <div className="md:border-r border-r-[#383838] px-12 mb-12 order-3 md:order-0">
+        <div className="md:border-r border-r-[#383838] px-4 mb-12 order-3 md:order-0">
           <div className="flex flex-col">
           <div className="flex items-center justify-between gap-2 md:gap-6 mb-4 ">
           <h1 className="text-white text-2xl pb-8 font-bold font-panchang">
@@ -69,7 +69,7 @@ export const CasesHome = () => {
       </div>
         </div>
         </div>
-        <div className="md:border-r px-12 mb-12 order-4 md:order-0 ">
+        <div className="md:border-r px-4 mb-12 order-4 md:order-0 ">
          <div className="flex flex-col">
           <div className="flex items-center justify-between gap-6 mb-4">
           <h1 className="text-white text-2xl pb-8 font-bold font-panchang">
@@ -91,14 +91,14 @@ export const CasesHome = () => {
           
         </div>
 
-        <div className="md:  px-12 order-2 md:order-0 mb-4 md:mb-20 xl:mb-24 3xl:mb-32 self-end  ">
+        <div className="md:  pl-20 order-2 md:order-0 mb-4 md:mb-20 xl:mb-24 3xl:mb-32 self-end  ">
           <div className="w-[246px] h-[246px] rounded-full bg-black text-white border border-white flex flex-col items-center justify-center text-center cursor-pointer hover:opacity-80 transition">
             <ArrowUpRight className="mb-2" />
-             <span className="text-sm tracking-wide font-semibold">START YOUR<br />CAREER</span>
+             <span className="text-sm  font-semibold">START YOUR<br />CAREER</span>
             </div>
 
         </div>
-        <div className="md:border-r border-r-[#383838] md:border-l border-l-[#383838] px-12 mb-12 order-5 md:order-0">
+        <div className="md:border-r border-r-[#383838] md:border-l border-l-[#383838] px-4 mb-12 order-5 md:order-0">
           <div className="flex flex-col">
           <div className="flex items-center justify-between gap-6 mb-4">
           <h1 className="text-white text-2xl pb-8 font-bold font-panchang">
@@ -118,7 +118,7 @@ export const CasesHome = () => {
       </div>
         </div>
         </div>
-        <div className="md:border-r px-12 mb-12 order-6 md:order-0 ">
+        <div className="md:border-r px-4 mb-12 order-6 md:order-0 ">
           <div className="flex flex-col">
           <div className="flex items-center justify-between gap-6 mb-4">
           <h1 className="text-white text-2xl pb-8 font-bold font-panchang">
@@ -144,8 +144,8 @@ export const CasesHome = () => {
 
 
 
-         <div className="grid grid-cols-1 md:grid-cols-3  w-full  py-12 px-12 border-b border-b-[#383838]  ">
-        <div className="md:border-r border-r-[#383838] px-12 mb-12 order-1 md:order-0">
+         <div className="grid grid-cols-1 md:grid-cols-3  w-full  py-12 md:px-10 border-b border-b-[#383838]  ">
+        <div className="md:border-r border-r-[#383838] px-4 mb-12 order-1 md:order-0">
         <div className="flex flex-col">
           <h1 className="text-white text-2xl pb-8 font-bold font-panchang">
             SAAS
@@ -158,7 +158,7 @@ export const CasesHome = () => {
 
         </div>
 
-        <div className="md:border-r border-r-[#383838] px-12 mb-12 order-3 md:order-0">
+        <div className="md:border-r border-r-[#383838] px-4 mb-12 order-3 md:order-0">
           <div className="flex flex-col">
           <div className="flex items-center justify-between gap-2 md:gap-6 mb-4 ">
           <h1 className="text-white text-2xl pb-8 font-bold font-panchang">
@@ -179,7 +179,7 @@ export const CasesHome = () => {
       </div>
         </div>
         </div>
-        <div className="md:border-r px-12 mb-12 order-4 md:order-0 ">
+        <div className="md:border-r px-4 mb-12 order-4 md:order-0 ">
          <div className="flex flex-col">
           <div className="flex items-center justify-between gap-6 mb-4">
           <h1 className="text-white text-2xl pb-8 font-bold font-panchang">
@@ -201,14 +201,14 @@ export const CasesHome = () => {
           
         </div>
 
-        <div className="md:  px-12 order-2 md:order-0 mb-4 lg:mb-24 2xl:mb-32 self-end ">
+        <div className="md:  pl-20 order-2 md:order-0 mb-4 lg:mb-24 2xl:mb-32 self-end ">
           <div className="w-[246px] h-[246px] rounded-full bg-black text-white border border-white flex flex-col items-center justify-center text-center cursor-pointer hover:opacity-80 transition">
             <ArrowUpRight className="mb-2" />
              <span className="text-sm tracking-wide font-semibold">START YOUR<br />CAREER</span>
             </div>
 
         </div>
-        <div className="md:border-r border-r-[#383838] md:border-l border-l-[#383838] px-12 mb-12 order-5 md:order-0">
+        <div className="md:border-r border-r-[#383838] md:border-l border-l-[#383838] px-4 mb-12 order-5 md:order-0">
           <div className="flex flex-col">
           <div className="flex items-center justify-between gap-6 mb-4">
           <h1 className="text-white text-2xl pb-8 font-bold font-panchang">
@@ -228,7 +228,7 @@ export const CasesHome = () => {
       </div>
         </div>
         </div>
-                <div className="md:border-r border-r-[#383838] md:border-l border-l-[#383838] px-12 mb-12 order-5 md:order-0">
+                <div className="md:border-r border-r-[#383838] md:border-l border-l-[#383838] px-4 mb-12 order-5 md:order-0">
           <div className="flex flex-col">
           <div className="flex items-center justify-between gap-6 mb-4">
           <h1 className="text-white text-2xl pb-8 font-bold font-panchang">

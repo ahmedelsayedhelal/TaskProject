@@ -23,9 +23,9 @@ export const AboutHead = () => {
 
 
           <img className="hidden md:block absolute  w-full bottom-[-10%] z-20   " src="/public/assets/22.svg" />
-          <img className="block  absolute bottom-[10%] md:hidden h-[200px] bg-black w-full " src="/public/assets/Vector (2).png" />
+          <img className="block  absolute bottom-[13%] md:hidden h-[200px] bg-black w-full " src="/public/assets/Vector (2).png" />
 
-          <p className="absolute  bottom-[-12%] md:bottom-[-15%] md:px-20 text-2xl font-normal   z-20">
+          <p className="absolute  bottom-[-12%] md:bottom-[-15%] md:px-20 text-2xl font-normal px-8  z-20">
             We build engaging user experience for early-stage <br />startups by connecting  the dots between users’ needs <br /> and the client’s business model.
           </p>
           <img className="absolute w-20 bottom-[12%] md:bottom-[-15%] md:w-30 right-4 md:right-16 z-20" src="/public/assets/Circle Button (Desktop).png" />

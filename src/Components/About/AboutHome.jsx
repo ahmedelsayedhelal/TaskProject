@@ -6,23 +6,23 @@ export const AboutHome = () => {
   
 
   return (
-    <section className="md:mt-40 min-h-screen w-full py-20">
+    <section className="md:mt-20 min-h-screen w-full md:py-20">
       <div className="grid grid-cols-2 md:grid-cols-3 w-full items-start">
 
-        <div className="flex flex-col h-[440px] py-8 items-center justify-center order-1 md:order-1 border-r border-r-gray-300 ">
+        <div className="flex flex-col h-[440px] md:py-8 items-center justify-center order-1 md:order-1 border-r border-r-gray-300 px-8">
           <p className="text-3xl font-bold">
             MEET BATUMBA
           </p>
-          <p className="text-xl px-8 mx-12">
+          <p className="text-xl  md:mx-12">
             We combine human empathy and intelligent data to provide the
           </p>
         </div>
 
-        <div className="flex flex-col  h-[440px] py-8 items-center justify-center order-2 md:order-3  border-l border-l-gray-300">
+        <div className="flex flex-col  h-[440px] md:py-8 items-center justify-center order-2 md:order-3 px-8  border-l border-l-gray-300">
           <p className="text-4xl font-bold">
             HEADING
           </p>
-          <p className="text-xl px-8 mx-28">
+          <p className="text-xl  md:mx-28">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           </p>
         </div>
@@ -50,7 +50,7 @@ export const AboutHome = () => {
           <img src="/public/assets/About2.svg" className="w-3/4 md:w-full md:h-[746px] mb-10 max-w-full" />
 
           <div className="flex flex-col w-full items-center py-8">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 px-4">
               <p className="text-white text-left text-3xl md:text-5xl mb-2 py-8 font-panchang">
                 TESTIMONIAL
               </p>
@@ -88,13 +88,13 @@ export const AboutHome = () => {
 
       </div>
 
-      <h3 className="text-6xl w-[600px] font-bold text-left mt-12 ml-12 py-8">
+      <h3 className="text-3xl md:text-6xl w-[600px] font-bold text-left mt-12 md:ml-12 py-8 px-8 uppercase">
         OUR GUIDING
         PRINCIPLES
 
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 mt-8 w-full items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 mt-8 w-full items-center px-4">
 
         <div className="col-start-2 col-end-4 py-8 border-l border-l-gray-200">
 

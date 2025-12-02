@@ -44,12 +44,12 @@ export const NewsHome = () => {
 
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 w-full justify-between   h-20 mt-16 md:mt-40">
+            <div className="grid grid-cols-2 md:grid-cols-3 w-full justify-between    h-20 mt-16 md:mt-40">
 
-                <div className="flex h-20 md:mt-6  justify-start gap-6 order-1 md:order-1">
+                <div className="flex h-20 md:mt-6    gap-6 order-1 md:order-1 px-2">
                     <img
                         src="/public/assets/News.png"
-                        className="w-20 h-20 ml-20 rounded-full"
+                        className="w-20 h-20 md:ml-20 rounded-full"
                     />
                     <p className="text-xl">
                         PETER VISSER <br />
@@ -58,12 +58,13 @@ export const NewsHome = () => {
                 </div>
                
 
-                <div className="flex h-[440px] py-8 items-center justify-center order-2 md:order-3">
-                    <ArrowLeft className="ml-20 mb-80" />
+                <div className="flex h-[440px] py-8 items-center justify-center order-2  md:order-3">
+                    <ArrowLeft className="md:ml-20 ml-12 mb-80" />
 
-                    <ArrowRight className="ml-20 mb-80" />
+                    <ArrowRight className="md:ml-20 ml-12 mb-80" />
 
-                </div>  <div className="hidden md:block text-xl md:text-2xl font-bold text-center font-panchang  py-4 col-span-2 order-3 md:order-2 md:col-span-1 md:mt-8 ">
+                </div>  
+                <div className="hidden md:block text-xl md:text-2xl mx-16 font-bold text-center font-panchang  col-span-2 order-3 md:order-2 md:col-span-1 md:mt-8 ">
                     Unix Studio got 2 <br />  CSS Design Awards
                 </div>
 
@@ -96,15 +97,15 @@ export const NewsHome = () => {
 
             </div>
 
-            <div className="h-[700px] hidden md:block w-[1318px] ">
-                <img src="/public/assets/News1.svg" className="m-auto" />
+            <div className=" hidden md:block min-w-full px-8 ">
+                <img src="/public/assets/News1.svg" className="px-12  w-full" />
 
             </div>
             </div>
 
-    <div className="flex flex-col md:flex-row w-full justify-between mt-8 py-4 px-20 ">
+    <div className="flex flex-col md:flex-row w-full justify-between mt-8 py-4 md:px-12 ">
            
-<div className="max-w-xl w-full  rounded-3xl   p-8 space-y-6">
+        <div className="max-w-xl w-full  rounded-3xl   p-8 space-y-6">
   <div className="flex items-center gap-4">
     <img
       src="/assets/News.png"
@@ -139,8 +140,8 @@ export const NewsHome = () => {
       className="w-full  object-cover hover:scale-105 transition-transform duration-500 ease-out"
     />
   </div>
-</div>
-<div className="max-w-xl w-full  rounded-3xl   p-8 space-y-6">
+       </div>
+      <div className="max-w-xl w-full  rounded-3xl   p-8 space-y-6">
   <div className="flex items-center gap-4">
     <img
       src="/assets/News.png"
@@ -174,8 +175,8 @@ export const NewsHome = () => {
       className="w-full  object-cover hover:scale-105 transition-transform duration-500 ease-out"
     />
   </div>
-</div>
-<div className="max-w-xl w-full  rounded-3xl   p-8 space-y-6">
+      </div>
+      <div className="max-w-xl w-full  rounded-3xl   p-8 space-y-6">
   <div className="flex items-center gap-4">
     <img
       src="/assets/News.png"
@@ -209,7 +210,7 @@ export const NewsHome = () => {
       className="w-full  object-cover hover:scale-105 transition-transform duration-500 ease-out"
     />
   </div>
-</div>
+      </div>
 
             </div>
                         
@@ -218,17 +219,17 @@ export const NewsHome = () => {
           
             <div className="w-3/4  m-auto h-px bg-black  mt-20 "></div>
 
-            <h3 className="font-bold text-9xl w-full h-[180] mt-20 text-center font-panchang ">
+            <h3 className="font-bold text-5xl md:text-9xl w-full h-[180] mt-20 text-center font-panchang ">
                 BEST
             </h3>
-            <div className="grid gap-4 w-full mt-20 items-center justify-center px-20">
+            <div className="grid gap-4 w-full mt-20 items-center justify-center px-8 md:px-20">
 
-                <div className="grid grid-cols-1 md:grid-cols-5 justify-center items-center gap-2 mb-8 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-5 justify-center items-center gap-4 md:gap-52 mb-8 w-full">
 
                     <div className="flex items-center gap-6 col-span-2">
                         <img
                             src="/public/assets/News.png"
-                            className="w-20 h-20 rounded-full ml-10"
+                            className="w-20 h-20 rounded-full "
                         />
                         <p className="text-xl font-semibold">
                             PETER VISSER <br />
@@ -248,12 +249,12 @@ export const NewsHome = () => {
                         5 min read
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-2 mb-8 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-5 items-center  gap-4 md:gap-52 mb-8 w-full">
 
                     <div className="flex items-center gap-6 col-span-2">
                         <img
                             src="/public/assets/News.png"
-                            className="w-20 h-20 rounded-full ml-10"
+                            className="w-20 h-20 rounded-full "
                         />
                         <p className="text-xl font-semibold">
                             PETER VISSER <br />
@@ -272,12 +273,12 @@ export const NewsHome = () => {
                     <div className="text-sm text-gray-500">
                         5 min read
                     </div>
-                </div> <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-2 mb-8 w-full">
+                </div> <div className="grid grid-cols-1 md:grid-cols-5 items-center  gap-4 md:gap-52 mb-8 w-full">
 
                     <div className="flex items-center gap-6 col-span-2">
                         <img
                             src="/public/assets/News.png"
-                            className="w-20 h-20 rounded-full ml-10"
+                            className="w-20 h-20 rounded-full "
                         />
                         <p className="text-xl font-semibold">
                             PETER VISSER <br />
@@ -297,12 +298,12 @@ export const NewsHome = () => {
                         5 min read
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-2 mb-8 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-5 items-center  gap-4 md:gap-52 mb-8 w-full">
 
                     <div className="flex items-center gap-6 col-span-2">
                         <img
                             src="/public/assets/News.png"
-                            className="w-20 h-20 rounded-full ml-10"
+                            className="w-20 h-20 rounded-full "
                         />
                         <p className="text-xl font-semibold">
                             PETER VISSER <br />
@@ -327,7 +328,7 @@ export const NewsHome = () => {
 
 
             
-    <div className="flex flex-col md:flex-row w-full justify-between mt-8 py-4 px-20 ">
+    <div className="flex flex-col md:flex-row w-full justify-between mt-8 py-4 md:px-12 ">
            
 <div className="max-w-xl w-full  rounded-3xl   p-8 space-y-6">
   <div className="flex items-center gap-4">

@@ -2,7 +2,7 @@
 
 export const ContactHead = () => {
   return (
-      <section className="flex flex-col bg-black mb-40">
+      <section id="home" className="flex flex-col bg-black mb-40">
         <div className="relative h-[700px] max-h-full  ">
           <div className="w-full flex flex-col md:flex-row md:items-start items-end  py-32  gap-6 md:gap-12 px-20 ">
             <h1 className="text-5xl md:text-8xl font-bold w-full text-left md:w-[890px] text-white uppercase   ">
