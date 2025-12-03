@@ -46,7 +46,7 @@ export const NewsHome = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 w-full justify-between    h-20 mt-16 md:mt-40">
 
-                <div className="flex h-20 md:mt-6    gap-6 order-1 md:order-1 px-2">
+                <div className="flex h-20 md:mt-6    gap-6 order-1 md:order-1 px-8 md:px-2">
                     <img
                         src="/public/assets/News.png"
                         className="w-20 h-20 md:ml-20 rounded-full"

@@ -74,7 +74,7 @@ export const ContactHome = () => {
 
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full py-20 justify-items-center">
+                <div className="grid grid-cols-2 md:grid-cols-4 md:gap-40 gap-8 pl-8 w-full py-4 md:py-20 md:pl-20">
 
                     <div className="flex flex-col justify-between items-center w-[183px] h-[183px]">
                         <img className="w-[60px] h-[60px]" src="/public/assets/In.png" />
@@ -119,8 +119,8 @@ export const ContactHome = () => {
 
                 </div>
                 <div className="w-3/4 m-auto h-px bg-white mt-20 opacity-40"></div>
-                <div className="flex w-full flex-col md:flex-row md:justify-between items-center py-8">
-                    <div className="mx-12 ">
+                <div className="flex w-full flex-col md:flex-row md:justify-between md:items-center  px-8 py-8">
+                    <div className="md:mx-12 ">
                         <a href="#home " className=" flex items-center gap-2 ">
                             <ArrowUp className="text-white" />
                             <div className="text-white w-[132px] h-8 ">

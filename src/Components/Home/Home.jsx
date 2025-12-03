@@ -4,8 +4,7 @@ import "swiper/css";
 import { OurProjects } from "./OurProjects";
 import { Worthy } from "./Worthy"
 import {Head} from "./Head"
-import { RevalonScroll } from "../Relevanscroll";
-import { About } from './../../Pages/About';
+
 
 export const Home = () => {
   const services = [
@@ -24,6 +23,7 @@ export const Home = () => {
   ];
 
 
+
   return (
     <>
      
@@ -32,24 +32,28 @@ export const Home = () => {
      
 
       <div className="flex flex-col w-full space-y-0  relative ">
-      <h1 className="font-bold font-panchang text-3xl md:text-7xl uppercase px-20 mb-12 ">
+
+      <h1 className="font-bold font-panchang text-3xl md:text-7xl uppercase px-8 md:px-20 mb-12 ">
         LET’s Find Your <br/>
         DEsign Product
       </h1>
-      <p className="text-xl md:text-3xl px-20 font-panchang font-semibold ">
+      
+      <p className="text-xl md:text-3xl px-8 md:px-20 font-panchang font-semibold ">
         Safe and Beneficial Design for Humanity.
       </p>
-      <div className="flex justify-between">
-      <p className="px-20 text-2xl">
+    
+
+      <div className="flex justify-between mt-8">
+      <p className="px-8 md:px-20 text-2xl ">
         We build engaging user experience for early-stage startups
          by connecting<br/>  the dots between users’ needs and the client’s business model.
       </p>
-      <p className="px-20 underline text-xl ">
+      <p className="px-8 md:px-20 underline text-xl ">
         See Details
       </p>
 
       </div>
-        <div className="w-full py-20 mt-10 px-4 md:px-20">
+        <div className="w-full py-20 mt-10 px-8 md:px-20">
           <ul className="divide-y divide-gray-200">
             {services.map((title, index) => (
               <li key={index} className="py-8">
@@ -65,12 +69,14 @@ export const Home = () => {
         </div>
 
         <div
-          className="w-full bg-cover h-auto"
+          className="w-full bg-cover h-full"
           style={{ backgroundImage: "url('/public/assets/background.svg')" }}
         >
-          <div className="relative flex flex-col items-center md:items-start z-10 px-4 md:px-20 py-20">
-            <img src="/public/assets/IMG.svg" className="w-3/4 md:w-full md:h-[746px] mb-10 max-w-full" />
+          <div className="relative w-full flex flex-col items-center md:items-start z-10 px-8 md:px-20 py-20">
+              <div className="  min-w-full  ">
+                <img src="/public/assets/IMG.svg" className="  w-full" />
 
+            </div>
             <h1 className="font-bold text-white text-3xl md:text-6xl md:text-left mb-2">
               Unix STUDIO
             </h1>
@@ -81,11 +87,11 @@ export const Home = () => {
             </div>
           </div>
 
-          <h1 className="font-bold text-center text-2xl md:text-6xl font-panchang md:text-left text-white px-4 md:px-20 mt-4 md:mt-12 mb-8">
+          <h1 className="font-bold text-center text-2xl md:text-6xl font-panchang md:text-left text-white px-8 md:px-20 mt-4 md:mt-12 mb-8">
             WITNESS THE BEAUTY
           </h1>
 
-          <h3 className="text-white text-xl md:text-3xl font-panchang text-center  md:text-left px-4 md:px-20 md:mb-32">
+          <h3 className="text-white text-xl md:text-3xl font-panchang text-center  md:text-left px-8 md:px-20 md:mb-32">
             SAFE AND BENEFICIAL DESIGIN FOR <br /> HUMANITY.
           </h3>
 
@@ -100,7 +106,7 @@ export const Home = () => {
           >
             {images.map((item, i) => (
               <SwiperSlide key={i}>
-                <div className="flex flex-col gap-4 md:pl-20">
+                <div className="flex flex-col gap-4 px-8 md:pl-20">
                   <img
                     src={item.src}
                     className="w-full h-auto max-w-full cursor-grab active:cursor-grabbing "
@@ -127,9 +133,9 @@ export const Home = () => {
             <span className="text-6xl md:text-9xl font-bold self-start text-white align-top  ">“</span>
 
 
-            <div className="flex-1">
+            <div className="flex-1 py-12">
               <div className="relative mb-8">
-                <p className="text-lg md:text-3xl lg:text-5xl pt-8 text-white leading-relaxed ml-8 md:ml-12 -mt-4 md:-mt-8">
+                <p className="text-lg md:text-3xl lg:text-5xl pt-8 text-white leading-relaxed ml-8 md:ml-12  -mt-4 md:-mt-8">
                   This is the highest level of professionalism I have ever encountered in the years that
                   I have been hiring people in this field. You have the distinct impression that you are
                   a part of a productive team.
@@ -163,47 +169,11 @@ export const Home = () => {
             
           </div>
 
-          <div className="flex justify-center items-center mt-20 md:mt-88  font-panchang ">
-            <h3 className="hidden md:block font-bold text-4xl md:text-7xl">
-              UNIX STUDIO
-            </h3>
-             <h3 className="block md:hidden font-bold text-4xl md:text-7xl">
-              UNIX 
-            </h3>
-            <img src="/public/assets/Vector.svg" className="inline-block ml-2 w-12 h-12 md:w-25 md:h-25" />
-            <h3 className="hidden md:block font-bold text-4xl md:text-7xl">
-              UNIX STUDIO
-            </h3>
-              <h3 className="block md:hidden font-bold text-4xl md:text-7xl">
-              STUDIO
-            </h3>
-          </div>
+        
 
-              <div className=" flex justify-center items-center mt-4 mb-20 font-panchang ">
-               <h3 className="hidden md:block font-bold text-4xl md:text-7xl">
-              STUDIO
-            </h3>
-             <h3 className="block md:hidden font-bold text-4xl md:text-7xl">
-              UNIX 
-            </h3>
-            <img src="/public/assets/Vector.svg" className="inline-block ml-2 w-12 h-12 md:w-25 md:h-25" />
-              <h3 className="hidden md:block font-bold text-4xl md:text-7xl">
-              UNIX STUDIO UNIX
-            </h3>
-              <h3 className="block md:hidden font-bold text-4xl md:text-7xl">
-              STUDIO
-            </h3>
-          </div>
 
         </div>
-        <p className="m-auto w-max text-2xl text-center text-[#121212] font-normal mb-12 ">
-          Dont’t wait any longer, let’s unleash your imagination and create <br/> something extraordinary together!
-        </p>
-         <p className="m-auto w-max text-2xl text-center text-[#121212] font-normal border-b border-b-[#121212]
-         ">
-         Catch a glimse!
-        </p>
-
+  
 
         <OurProjects />
         <Worthy />

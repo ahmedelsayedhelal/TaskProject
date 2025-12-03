@@ -5,9 +5,9 @@ export const Worthy = () => {
 
 
   return (
-    <div className="bg-black text-white min-h-screen py-16 px-6 md:px-12 lg:px-20 ">
+    <div className="bg-black text-white min-h-screen py-16 px-8 md:px-12 lg:px-20 ">
       <div className="mb-16">
-        <div className="flex flex-col items-center md:flex-row md:items-start md:justify-between mb-8">
+        <div className="flex flex-col  md:flex-row md:items-start md:justify-between mb-8">
           <div className="mb-6 md:mb-0 font-panchang">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase leading-tight mb-4">
               WE ARE{' '}
@@ -21,16 +21,16 @@ export const Worthy = () => {
                 RTHY
               </span>
             </h1>
-            <p className="text-base md:text-lg text-gray-300">Born in Unix</p>
+            <p className="text-base md:text-lg px-2 text-gray-300">Born in Unix</p>
           </div>
 
-          <div className="text-right">
+          <div className="text-left md:text-right px-4">
             <p className="text-base md:text-lg text-white mb-1">Clients</p>
             <p className="text-sm md:text-base text-gray-300">all around the globe</p>
           </div>
         </div>
       </div>
-       <div className="grid grid-cols-2 md:grid-cols-4 py-20 w-full md:divide-x divide-[#383838] border-t border-[#383838]">
+       <div className="grid grid-cols-2 md:grid-cols-4 py-12 w-full md:divide-x divide-[#383838] border-t border-[#383838]">
   
   <div className="md:col-start-2 md:border-l border-[#383838] p-12">
     Active users on marketplaces we’ve created
@@ -77,7 +77,7 @@ export const Worthy = () => {
     <br /> 80+
   </div>
 
-  <div className="border-b border-[#383838] font-bold text-5xl p-12">
+  <div className="md:border-b border-[#383838] font-bold text-5xl p-12">
     <span className="text-base font-normal">Design awards</span>
     <br /> 25m
   </div>
@@ -99,7 +99,7 @@ export const Worthy = () => {
     </div>
     </div>
 
-    <div className="md:col-start-4 flex w-full justify-between items-center border-r border-[#383838]">
+    <div className="md:col-start-4 flex w-full justify-between items-center md:border-r border-[#383838]">
     <div className="px-20">
       <ArrowDownLeft size={60} />
     </div>
